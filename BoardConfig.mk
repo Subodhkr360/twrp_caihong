@@ -67,3 +67,18 @@ TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
 TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone45/temp"
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness"
+
+# OrangeFox Specific Graphics
+OF_SCREEN_H := 3000
+OF_SCREEN_W := 2120
+OF_ALLOW_DISABLE_NAVBAR=0
+#
+TW_MAX_BRIGHTNESS := 2047
+TW_DEFAULT_BRIGHTNESS := 1000
+# Fixes battery showing 100% all the time
+OF_USE_LEGACY_BATTERY_SERVICES := 1
+TW_ALWAYS_RMRF := true
