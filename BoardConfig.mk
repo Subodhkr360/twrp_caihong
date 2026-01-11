@@ -61,7 +61,7 @@ TW_INCLUDE_RESETPROP := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_FRAMERATE := 144
 
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko spmi-pmic-arb.ko qcom-spmi-pmic.ko rproc_qcom_common.ko pmic_glink.ko oplus_chg_v2.ko"
 
 # TWRP Debug Flags
 TWRP_EVENT_LOGGING := true
