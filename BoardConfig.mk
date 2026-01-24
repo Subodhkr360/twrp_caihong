@@ -79,7 +79,7 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone45/temp"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness"
 
 # OrangeFox Specific Graphics
-OF_SCREEN_H := 1400
+OF_SCREEN_H := 1300
 OF_SCREEN_W := 2120
 OF_ALLOW_DISABLE_NAVBAR=0
 #
@@ -92,3 +92,5 @@ OF_UNBIND_SDCARD_F2FS := 1
 OF_FORCE_DATA_FORMAT_F2FS := 1
 OF_USE_GREEN_LED := 0
 OF_MAINTAINER := Subodkr360
+TW_NO_HAPTICS := true
+OF_NO_HAPTIC_FEEDBACK := true
