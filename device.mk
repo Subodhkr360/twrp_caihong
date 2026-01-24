@@ -20,6 +20,19 @@ AB_OTA_PARTITIONS += \
     system_dlkm \
     vendor_dlkm
 
+AB_OTA_PARTITIONS += \
+    my_bigball \
+    my_carrier \
+    my_company \
+    my_engineering \
+    my_heytap \
+    my_manifest \
+    my_preload \
+    my_product \
+    my_region \
+    my_stock
+
+
 
 # Fastboot
 PRODUCT_PACKAGES += \
