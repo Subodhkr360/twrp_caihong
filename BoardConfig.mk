@@ -1,21 +1,17 @@
-
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a-branchprot
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
-
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
-
 # File systems
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -26,34 +22,27 @@ TARGET_USES_MKE2FS := true
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-
 # Encryption
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 BOARD_USES_METADATA_PARTITION := true
-
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 4
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_NO_KERNEL_OVERRIDE := true
-
 # Platform
 TARGET_BOARD_PLATFORM := pineapple
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno750
-
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
 BOARD_SUPER_PARTITION_SIZE := 15032385536
 BOARD_SUPER_PARTITION_GROUPS := oneplus_dynamic_partitions
 BOARD_ONEPLUS_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor odm vendor_dlkm odm_dlkm
 BOARD_ONEPLUS_DYNAMIC_PARTITIONS_SIZE := 15032385536
-
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_QCOM_RTC_FIX := true
-
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := 12.1
@@ -68,28 +57,22 @@ TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_FRAMERATE := 144
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
-
 #
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko rproc_qcom_common.ko q6_dlkm.ko qcom_q6v5.ko qcom_q6v5_pas.ko qcom_esoc.ko qcom_sysmon.ko qcom-hv-haptics.ko goodix_ts.ko haptic_feedback.ko oplus_chg_v2.ko oplus_bsp_tp_custom.ko oplus_bsp_tp_common.ko oplus_bsp_tp_notify.ko oplus_bsp_tp_tcm_oncell.ko oplus_bsp_tp_tcm_S3910.ko oplus_bsp_tp_syna_comnon.ko oplus_bsp_tp_gt9966.ko oplus_bsp_tp_gt9916.ko"
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
-
 # TWRP Debug Flags
 TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
 #
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone45/temp"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness"
-
 # OrangeFox Specific Graphics
-OF_SCREEN_H := 2500
-OF_SCREEN_W := 2120
+OF_SCREEN_H := 2300
+OF_SCREEN_W := 2100
 #
-
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1000
-
 #
 TW_ALWAYS_RMRF := true
 OF_WIPE_METADATA_AFTER_DATAFORMAT := 1
