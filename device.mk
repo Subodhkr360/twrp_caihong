@@ -17,21 +17,7 @@ AB_OTA_PARTITIONS += \
     odm \
     vbmeta \
     vbmeta_vendor \
-    vbmeta_system \
-    system_dlkm \
-    vendor_dlkm
-
-AB_OTA_PARTITIONS += \
-    my_bigball \
-    my_carrier \
-    my_company \
-    my_engineering \
-    my_heytap \
-    my_manifest \
-    my_preload \
-    my_product \
-    my_region \
-    my_stock
+    vbmeta_system 
 
 # Fastboot
 PRODUCT_PACKAGES += \
