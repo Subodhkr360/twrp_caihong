@@ -58,12 +58,7 @@ TW_FRAMERATE := 144
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
 #
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko rproc_qcom_common.ko q6_dlkm.ko qcom_q6v5.ko qcom_q6v5_pas.ko qcom_esoc.ko qcom_sysmon.ko qcom-hv-haptics.ko goodix_ts.ko haptic_feedback.ko oplus_chg_v2.ko oplus_bsp_tp_custom.ko oplus_bsp_tp_common.ko oplus_bsp_tp_notify.ko oplus_bsp_tp_tcm_oncell.ko oplus_bsp_tp_tcm_S3910.ko oplus_bsp_tp_syna_comnon.ko oplus_bsp_tp_gt9966.ko oplus_bsp_tp_gt9916.ko"
-TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
-# TWRP Debug Flags
-TWRP_EVENT_LOGGING := true
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
 #
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone45/temp"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness"
